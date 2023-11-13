@@ -1,0 +1,10 @@
+appsettings.json
+appsettings.Development.json
+**/assets
+**/tar
+**/bin
+**/obj
+
+
+
+
