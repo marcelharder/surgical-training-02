@@ -18,7 +18,7 @@ public class EpaService : IEpaService
 
     public async Task<Class_Epa> getIndividualEpa_Dapper(int id)
     {
-        var query = "Select * FROM Epaas WHERE Id = @id";
+        var query = "Select * FROM Epaas WHERE EpaID = @id";
         using (var connection = _dapContext.CreateConnection())
         {
             var selectedEpa = await connection.QueryFirstOrDefaultAsync<Class_Epa>(query, new { id });

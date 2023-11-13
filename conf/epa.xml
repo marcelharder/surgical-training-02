@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+<epa>
+		<ID>1</ID>
+		<description>Het verlenen van perioperatieve zorg aan de cardiochirurgische patient</description>
+</epa>
+<epa>
+		<ID>2</ID>
+		<description>Het toepassen van de extracorporale circulatie</description>
+</epa>
+<epa>
+		<ID>3</ID>
+		<description>Het aanbrengen van een toegangsweg</description>
+</epa>
+<epa>
+		<ID>4</ID>
+		<description>Teamwork</description>
+</epa>
+<epa>
+		<ID>5</ID>
+		<description>Het managen van postoperatieve complicaties, incidenten en calamiteiten</description>
+</epa>
+<epa>
+		<ID>6</ID>
+		<description>Het chirurgisch behandelen van een patient met ischemische hartziekte</description>
+</epa>
+<epa>
+		<ID>7</ID>
+		<description>Het behandelen van een patient met aortaklep of aortawortel vitium</description>
+</epa>
+<epa>
+		<ID>8</ID>
+		<description>Het behandelen van een patient met mitralisklepziekte (incl verdieping)</description>
+</epa>
+<epa>
+		<ID>9</ID>
+		<description>Het behandelen van een patient met aortale vaatpathologie (incl verdieping)</description>
+</epa>
+<epa>
+		<ID>10</ID>
+		<description>Het behandelen van een patient middels orgaan vervangende therapie (incl verdieping)</description>
+</epa>
+<epa>
+		<ID>11</ID>
+		<description>Het behandelen van een patient met een ritmestoornis (incl verdieping)</description>
+</epa>
+<epa>
+		<ID>12</ID>
+		<description>Het behandelen van een patient met een congenitale hartafwijking (incl verdieping)</description>
+</epa>
+<epa>
+		<ID>13</ID>
+		<description>Het chirurgisch behandelen van afwijkingen in de longen, het mediastinum, de thoraxwand en de pleura (incl verdieping)</description>
+</epa>
+<epa>
+		<ID>14</ID>
+		<description>Het chirugisch behandelen van patienten met een zeldzame aandoening</description>
+</epa>
+<epa>
+		<ID>15</ID>
+		<description>Het behandelen van een patient middels transcathetertechnieken (verdieping)</description>
+</epa>
+</root>

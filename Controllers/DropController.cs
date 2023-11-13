@@ -1,5 +1,3 @@
-
-
 namespace Cardiohelp.Controllers;
 
     public class DropController : BaseApiController
