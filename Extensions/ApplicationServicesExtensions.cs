@@ -28,7 +28,6 @@ public static class ApplicationServicesExtensions
 
 
             services.AddScoped<IPhotoService, PhotoService>();
-            services.AddScoped<IPdfService, PdfService>();
             services.AddScoped<IEpaService, EpaService>();
             services.AddScoped<SpecialMaps>();
             services.AddScoped<Dropdownlists>();

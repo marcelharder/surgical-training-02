@@ -1,5 +1,3 @@
-
-
 namespace api.DAL.entities;
  public class Class_Course
     {

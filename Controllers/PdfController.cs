@@ -1,22 +1,22 @@
-namespace api.Controllers;
+
 
 [ApiController]
 [Route("api/[controller]")]
 public class PdfController : BaseApiController
 {
-    private readonly IPdfService _pdf;
+    
     private readonly IDocumentService _doc;
     private IPhotoService _ps;
     private SpecialMaps _spec;
 
     public PdfController(
-        IPdfService pdf,
+        
         IPhotoService ps,
         SpecialMaps spec,
         IDocumentService doc
         )
     {
-        _pdf = pdf;
+       
         _ps = ps;
         _spec = spec;
         _doc = doc;

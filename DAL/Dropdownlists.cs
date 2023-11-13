@@ -1,5 +1,3 @@
-
-
 namespace api.DAL;
 
     public class Dropdownlists
