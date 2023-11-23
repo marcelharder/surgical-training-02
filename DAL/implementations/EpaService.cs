@@ -12,7 +12,6 @@ public class EpaService : IEpaService
         _context = context;
         _spec = spec;
         _dapContext = dapContext;
-
     }
    
 
@@ -33,7 +32,7 @@ public class EpaService : IEpaService
 
         // see if there is a epa for this userId, if not than add 15 epa's
 
-        var query = "Select * FROM Epaas WHERE userId = @useridid";
+        var query = "Select * FROM Epaas WHERE userId = @userid";
         using (var connection = _dapContext.CreateConnection())
         {
             var epapresent = await connection.QueryAsync<Class_Epa>(query, new { userid });
@@ -109,12 +108,12 @@ public class EpaService : IEpaService
 
 
     }
-    public async Task<int> updateDapperEpa(EpaDetailsDto up)
+    public async Task updateDapperEpa(EpaDetailsDto up)
         {
             var query = "UPDATE Epaas SET EpaId = @EpaId," +
-            "name = @name, category = @category,year = @year,created = @created, image = @image," +
-            "date_started = @date_started,date_finished = @date_finished,finished = @finished,grade = @grade, KBP = @KBP," +
-            "OSATS = @OSATS, Beoordeling_360 = @Beoordeling_360,CAT_CAL = @CAT_CAL,Examen = @Examen, option_6 = @option_6,option_7 = @option_7 " +
+            "Name = @name, Category = @category,Year = @year,Created = @created, Image = @image," +
+            "Date_started = @date_started,Date_finished = @date_finished,Finished = @finished,Grade = @grade, KBP = @KBP," +
+            "OSATS = @OSATS, Beoordeling_360 = @Beoordeling_360,CAT_CAL = @CAT_CAL,Examen = @Examen, Option_6 = @option_6,Option_7 = @option_7 " +
             "WHERE Id = @Id";
 
             var parameters = new DynamicParameters();
@@ -140,18 +139,16 @@ public class EpaService : IEpaService
             {
                 await connection.ExecuteAsync(query, parameters);
             }
-            return 1;
-        }
-    public async Task<int> deleteDapperEpaAsync(int id)
+          }
+    public async Task deleteDapperEpaAsync(int id)
     {
         var query = "DELETE FROM Epaas WHERE Id = @id";
         using (var connection = _dapContext.CreateConnection())
         {
             await connection.ExecuteAsync(query, new { id });
         }
-        return 1;
+        
     }
 
     
-
 }

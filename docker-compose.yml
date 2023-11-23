@@ -32,7 +32,7 @@ services:
   #   - internal-container-network 
 
   training:
-    image: training:v15
+    image: training:v16
     networks:
       - internal-container-network
     ports:
