@@ -1,8 +1,7 @@
-namespace api.DAL.models;
+namespace api.DAL.dtos;
 
-public class Class_Publication
+public class PublicationDetailsDto
 {
-    [Key]
     public int PublicationId { get; set; }
     public int UserId { get; set; }
     public string Author { get; set; }
@@ -15,6 +14,7 @@ public class Class_Publication
     public DateTime DateOfPublication { get; set; }
     public string URL { get; set; }
     public string DOI { get; set; }
+
 
 
 }

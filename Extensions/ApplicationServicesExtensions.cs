@@ -25,8 +25,6 @@ public static class ApplicationServicesExtensions
             services.Configure<CloudinarySettings>(config.GetSection("CloudinarySettings"));
             services.Configure<ComSettings>(config.GetSection("ComSettings"));
 
-
-
             services.AddScoped<IPhotoService, PhotoService>();
             services.AddScoped<IEpaService, EpaService>();
             services.AddScoped<SpecialMaps>();
@@ -36,6 +34,8 @@ public static class ApplicationServicesExtensions
             services.AddScoped<IDocumentService, DocumentService>();
             services.AddScoped<IProcedureService, ProcedureService>();
             services.AddScoped<IDapperCourseService, DapperCourseService>();
+            services.AddScoped<IPresentationService,PresentationService>();
+            services.AddScoped<IPublicationService,PublicationService>();
           
 
             services.AddAutoMapper(typeof(AutoMapperProfiles).Assembly);
